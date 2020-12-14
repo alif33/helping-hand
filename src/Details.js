@@ -1,11 +1,21 @@
 import React from 'react'
-import { View, Text } from 'react-native'
-
+import { View, Text, FlatList } from 'react-native'
+import { TouchableOpacity } from 'react-native-gesture-handler'
+import Item from './Item'
 const Details = props =>{
+
+  console.log(props.route.params.data)
   return(
-    <View> 
-        <Text>I am details</Text>
-    </View>
+    <FlatList
+      data={props.route.params.data}
+      renderItem={({item})=>{
+        return(
+          <Item 
+            name={item.name}
+          />
+        )
+      }}
+    />
   )
 }
 

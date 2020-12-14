@@ -11,18 +11,22 @@ const Home = props =>{
           <Btn 
             navigation = {props.navigation}
             name="Check The name"
+            data={data.first}
           />
           <Btn 
             navigation = {props.navigation}
             name="Check The name"
+            data={data.second}
           />
           <Btn 
             navigation = {props.navigation}
             name="Check The name"
+            data={data.third}
           />
           <Btn 
             navigation = {props.navigation}
             name="Check The name"
+            data={data.for}
           />
       </View>
     // <FlatList
