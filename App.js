@@ -3,17 +3,16 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createDrawerNavigator } from '@react-navigation/drawer'
 import DrawerContent from './src/DrawerContent'
 import Home from './src/Home' 
-import Details from './src/Details' 
+import Find from './src/Find' 
 
 const Drawer = createDrawerNavigator()
 
 const App = props =>{
-  console.log(props)
   return(
     <NavigationContainer>
      <Drawer.Navigator initialRouteName="Home" drawerContent={(props) => <DrawerContent {...props} />}>
          <Drawer.Screen name="Home" component={ Home }/>
-         <Drawer.Screen name="Details" component={ Details }/>         
+         <Drawer.Screen name="Details" component={ Find }/>         
      </Drawer.Navigator> 
     </NavigationContainer>
   )
